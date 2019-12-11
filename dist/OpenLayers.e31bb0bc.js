@@ -69546,13 +69546,99 @@ var _source = require("ol/source");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+/*var geojsonObject = {
+  'type': 'FeatureCollection',
+  'crs': {
+    'type': 'name',
+    'properties': {
+      'name': 'EPSG:3857'
+    }
+  },
+  'features': [{
+    'type': 'Feature',
+    'geometry': {
+      'type': 'Point',
+      'coordinates': [0, 0]
+    }
+  }, {
+    'type': 'Feature',
+    'geometry': {
+      'type': 'LineString',
+      'coordinates': [[4e6, -2e6], [8e6, 2e6]]
+    }
+  }, {
+    'type': 'Feature',
+    'geometry': {
+      'type': 'LineString',
+      'coordinates': [[4e6, 2e6], [8e6, -2e6]]
+    }
+  }, {
+    'type': 'Feature',
+    'geometry': {
+      'type': 'Polygon',
+      'coordinates': [[[-5e6, -1e6], [-4e6, 1e6], [-3e6, -1e6]]]
+    }
+  }, {
+    'type': 'Feature',
+    'geometry': {
+      'type': 'MultiLineString',
+      'coordinates': [
+        [[-1e6, -7.5e5], [-1e6, 7.5e5]],
+        [[1e6, -7.5e5], [1e6, 7.5e5]],
+        [[-7.5e5, -1e6], [7.5e5, -1e6]],
+        [[-7.5e5, 1e6], [7.5e5, 1e6]]
+      ]
+    }
+  }, {
+    'type': 'Feature',
+    'geometry': {
+      'type': 'MultiPolygon',
+      'coordinates': [
+        [[[-5e6, 6e6], [-5e6, 8e6], [-3e6, 8e6], [-3e6, 6e6]]],
+        [[[-2e6, 6e6], [-2e6, 8e6], [0, 8e6], [0, 6e6]]],
+        [[[1e6, 6e6], [1e6, 8e6], [3e6, 8e6], [3e6, 6e6]]]
+      ]
+    }
+  }, {
+    'type': 'Feature',
+    'geometry': {
+      'type': 'GeometryCollection',
+      'geometries': [{
+        'type': 'LineString',
+        'coordinates': [[-5e6, -5e6], [0, -5e6]]
+      }, {
+        'type': 'Point',
+        'coordinates': [4e6, -5e6]
+      }, {
+        'type': 'Polygon',
+        'coordinates': [[[1e6, -6e6], [2e6, -4e6], [3e6, -6e6]]]
+      }]
+    }
+  }]
+}; 
+var geojsonObject = {
+  'type': 'FeatureCollection',
+  'crs': {
+    'type': 'name',
+    'properties': {
+      'name': 'EPSG:3857'
+    }
+  },
+  'features': [{
+    'type': 'Feature',
+    'geometry': {
+      'type': 'Point',
+      'coordinates': [4e6, 0]
+    }
+  }]};
+*/
 var geojsonObject = {
   "type": "FeatureCollection",
   "features": [{
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-1.250296, 52.831497]
+      "coordinates": [-139182.314061, 6951890.044931]
     },
     "properties": {
       "name": "University of Nottingham"
@@ -69561,7 +69647,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [2.837305, 41.967426]
+      "coordinates": [315847.347825, 5156101.265028]
     },
     "properties": {
       "name": "University of Girona"
@@ -69570,7 +69656,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-1.396873, 50.936974]
+      "coordinates": [-155499.191063, 6610152.716084]
     },
     "properties": {
       "name": "University of Southampton"
@@ -69579,7 +69665,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [14.390363, 50.10183]
+      "coordinates": [1601927.88149, 6463929.715147]
     },
     "properties": {
       "name": "Czech Technical University in Prague"
@@ -69588,7 +69674,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-1.611536, 54.980656]
+      "coordinates": [-179395.366915, 7358112.741815]
     },
     "properties": {
       "name": "Open Source Geospatial Lab Newcastle University"
@@ -69597,7 +69683,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [9.095939, 45.803516]
+      "coordinates": [1012555.297767, 5748918.234868]
     },
     "properties": {
       "name": "Politecnico di Milano - Polo Territoriale di Como"
@@ -69606,7 +69692,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-1.56273, 52.380531]
+      "coordinates": [-173962.307847, 6869224.965661]
     },
     "properties": {
       "name": "University of Warwick"
@@ -69615,7 +69701,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [21.039473, 52.198849]
+      "coordinates": [2342103.420919, 6836160.070871]
     },
     "properties": {
       "name": "UNEP/GRID Warsaw Centre"
@@ -69624,7 +69710,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [8.961098, 46.028362]
+      "coordinates": [997544.866309, 5784895.416108]
     },
     "properties": {
       "name": "University of Applied Sciences and Arts of Southern Switzerland (SUPSI)"
@@ -69633,7 +69719,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [8.5481, 47.3764]
+      "coordinates": [951570.13925, 6003730.010952]
     },
     "properties": {
       "name": "Open Source Geospatial Laboratory at ETH Zurich"
@@ -69642,7 +69728,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [14.493651, 41.630815]
+      "coordinates": [1613425.849055, 5105836.748257]
     },
     "properties": {
       "name": "University of Molise"
@@ -69651,7 +69737,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [21.013407, 52.178478]
+      "coordinates": [2339201.767072, 6832461.123147]
     },
     "properties": {
       "name": "Institute of Geodesy and Cartography (IGiK)"
@@ -69660,7 +69746,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [26.103889, 44.4325]
+      "coordinates": [2905871.631204, 5532618.334007]
     },
     "properties": {
       "name": "Faculty of Geography, University of Bucharest"
@@ -69669,7 +69755,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [18.418833, 47.188778]
+      "coordinates": [2050375.110566, 5972942.066918]
     },
     "properties": {
       "name": "University Alba Regia Technical Faculty Institute of Geoinformatics OSGeo Lab"
@@ -69678,7 +69764,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [9.1737, 48.77996]
+      "coordinates": [1021211.61269, 6237607.350202]
     },
     "properties": {
       "name": "Stuttgart University of Applied Sciences"
@@ -69687,43 +69773,43 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-49.23329, -25.45304]
+      "coordinates": [-5480624.772878, -2931493.801993]
     },
     "properties": {
-      "name": "Laboratorio Geoespacial Livre, Federal University of Paraná"
+      "name": "Laboratorio Geoespacial Livre, Federal University of Paran\xE1"
     }
   }, {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [21.246043, 48.728888]
+      "coordinates": [2365098.710396, 6228983.989253]
     },
     "properties": {
-      "name": "Institute of Geography, Pavol Jozef Šafárik University"
+      "name": "Institute of Geography, Pavol Jozef \u0160af\xE1rik University"
     }
   }, {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-74.06564, 4.62799]
+      "coordinates": [-8244949.330078, 515746.617076]
     },
     "properties": {
-      "name": "OSGeoLabUD, Universidad Distrital Francisco José de Caldas"
+      "name": "OSGeoLabUD, Universidad Distrital Francisco Jos\xE9 de Caldas"
     }
   }, {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-56.176441, -34.902405]
+      "coordinates": [-6253532.806698, -4150626.269973]
     },
     "properties": {
-      "name": "Universidad de la República"
+      "name": "Universidad de la Rep\xFAblica"
     }
   }, {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [11.139053, 46.064827]
+      "coordinates": [1239993.707879, 5790743.885285]
     },
     "properties": {
       "name": "Dipartimento di Ingegneria Civile Ambientale e Meccanica, University of Trento"
@@ -69732,7 +69818,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [8.67024, 49.41739]
+      "coordinates": [965166.701855, 6345982.799665]
     },
     "properties": {
       "name": "University of Heidelberg"
@@ -69741,7 +69827,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-78.6764, 35.7818]
+      "coordinates": [-8758216.785448, 4270638.77641]
     },
     "properties": {
       "name": "North Carolina State University OSGeoREL"
@@ -69750,7 +69836,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-72.524696, 42.393578]
+      "coordinates": [-8073412.228657, 5220119.066411]
     },
     "properties": {
       "name": "University of Massachusetts Amherst"
@@ -69759,7 +69845,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-95.251311, 38.958578]
+      "coordinates": [-10603327.437912, 4715739.962091]
     },
     "properties": {
       "name": "University of Kansas"
@@ -69768,7 +69854,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-121.766945, 38.548801]
+      "coordinates": [-13555034.312853, 4657245.725811]
     },
     "properties": {
       "name": "Center for Spatial Sciences, University of California, Davis"
@@ -69777,7 +69863,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-102.5791, 22.7608]
+      "coordinates": [-11419053.178032, 2603116.960874]
     },
     "properties": {
       "name": "Laboratorio de Software Libre"
@@ -69786,7 +69872,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-81.357886, 41.153667]
+      "coordinates": [-9056718.441537, 5035034.001495]
     },
     "properties": {
       "name": "Kent State University"
@@ -69795,7 +69881,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-80.73, 35.306944]
+      "coordinates": [-8986822.491741, 4205672.238915]
     },
     "properties": {
       "name": "Center for Applied GIScience, University of North Carolina, Charlotte"
@@ -69804,7 +69890,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [101.721298, 3.172932]
+      "coordinates": [11323563.096191, 353389.846259]
     },
     "properties": {
       "name": "University of Nottingham, Malaysia campus"
@@ -69813,7 +69899,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [101.874222, 2.943748]
+      "coordinates": [11340586.518001, 327840.794158]
     },
     "properties": {
       "name": "Universiti Teknologi Malaysia (UTM)"
@@ -69822,7 +69908,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [121.059875, 14.656005]
+      "coordinates": [13476323.640497, 1649587.56477]
     },
     "properties": {
       "name": "National College of Public Administration and Governance(NCPAG), University of the Philippines"
@@ -69831,7 +69917,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [121.062241, 14.64372]
+      "coordinates": [13476587.022413, 1648174.050684]
     },
     "properties": {
       "name": "Environmental Science for Social Change (ESSC)"
@@ -69840,7 +69926,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [78.3503, 17.4454]
+      "coordinates": [8721915.4995, 1972734.449633]
     },
     "properties": {
       "name": "Lab for Spatial Informatics, IIIT Hyderabad"
@@ -69849,7 +69935,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [73.175045, 33.52006]
+      "coordinates": [8145808.748175, 3964538.435197]
     },
     "properties": {
       "name": "Geospatial Research and Education Lab(GREL), Institute of Space Technology (IST)"
@@ -69858,7 +69944,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [28.22847, -25.75429]
+      "coordinates": [3142378.906273, -2968680.396902]
     },
     "properties": {
       "name": "Department of Geography, Geoinformatics and Meteorology, University of Pretoria"
@@ -69867,7 +69953,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [36.858574, -1.249038]
+      "coordinates": [4103077.689046, -139053.288349]
     },
     "properties": {
       "name": "Regional Centre for  Mapping of Resources for Development (RCMRD)"
@@ -69876,7 +69962,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-0.191617, 5.650366]
+      "coordinates": [-21330.706867, 630017.892193]
     },
     "properties": {
       "name": "University of Ghana"
@@ -69885,7 +69971,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [144.962006, -37.797932]
+      "coordinates": [16137096.692291, -4550919.577511]
     },
     "properties": {
       "name": "The University of Melbourne"
@@ -69894,7 +69980,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-97.328799, 27.714506]
+      "coordinates": [-10834592.344201, 3213026.977195]
     },
     "properties": {
       "name": "Spatial {Query} Lab at Texas A&M University - Corpus Christi"
@@ -69903,7 +69989,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [72.566004, 23.039568]
+      "coordinates": [8078010.614183, 2636804.419719]
     },
     "properties": {
       "name": "CEPT University"
@@ -69912,16 +69998,16 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-68.57, -31.54]
+      "coordinates": [-7633177.483695, -3703078.79146]
     },
     "properties": {
-      "name": "Programa de Gestión de Información y Gestión de Datos -IRPHa Universidad Nacional de San Juan"
+      "name": "Programa de Gesti\xF3n de Informaci\xF3n y Gesti\xF3n de Datos -IRPHa Universidad Nacional de San Juan"
     }
   }, {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-111.940005, 33.42551]
+      "coordinates": [-12461104.355996, 3951920.456805]
     },
     "properties": {
       "name": "GeoDa Center for Geospatial Analysis and Computation, Arizona State University"
@@ -69930,7 +70016,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [23.72931, 37.983716]
+      "coordinates": [2641534.706076, 4577125.685141]
     },
     "properties": {
       "name": "National Technical University of Athens"
@@ -69939,7 +70025,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [2.352222, 48.856614]
+      "coordinates": [261848.155273, 6250566.718238]
     },
     "properties": {
       "name": "IGN- France"
@@ -69948,7 +70034,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [2.173403, 41.385064]
+      "coordinates": [241942.115249, 5069305.503774]
     },
     "properties": {
       "name": "Universitat Oberta de Catalunya"
@@ -69957,7 +70043,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [5.665662, 51.9875]
+      "coordinates": [630698.608847, 6797865.609568]
     },
     "properties": {
       "name": "ISRIC - World Soil Information foundation"
@@ -69966,16 +70052,16 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-8.41154, 43.362344]
+      "coordinates": [-936368.349587, 5367287.936721]
     },
     "properties": {
-      "name": "Universidade da Coruña"
+      "name": "Universidade da Coru\xF1a"
     }
   }, {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [100.484623, 5.263234]
+      "coordinates": [11185897.064914, 586726.281886]
     },
     "properties": {
       "name": "Geoinformatic Unit,  Universiti Sains Malaysia"
@@ -69984,7 +70070,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [85.55, 27.616667]
+      "coordinates": [9523382.437365, 3200729.668993]
     },
     "properties": {
       "name": "Kathmandu University"
@@ -69993,7 +70079,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [11.133042, 46.187865]
+      "coordinates": [1239324.56642, 5810505.997881]
     },
     "properties": {
       "name": "GIS and Remote Sensing Unit, Fondazione Edmund Mach"
@@ -70002,7 +70088,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-3.17909, 51.481581]
+      "coordinates": [-353894.679986, 6706926.02086]
     },
     "properties": {
       "name": "University of South Wales"
@@ -70011,7 +70097,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-122.676207, 45.523452]
+      "coordinates": [-13656252.89569, 5704308.191253]
     },
     "properties": {
       "name": "Portland State University"
@@ -70020,7 +70106,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [36.821946, -1.292066]
+      "coordinates": [4099000.278737, -143844.321446]
     },
     "properties": {
       "name": "IGAD Climate Prediction and Applications Center"
@@ -70029,16 +70115,16 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-38.543395, -3.718394]
+      "coordinates": [-4290631.104844, -414220.596373]
     },
     "properties": {
-      "name": "Federal University of Ceará"
+      "name": "Federal University of Cear\xE1"
     }
   }, {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-2.223409, 51.872215]
+      "coordinates": [-247508.757705, 6777053.18397]
     },
     "properties": {
       "name": "University of Gloucestershire"
@@ -70047,7 +70133,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [79.9008, 6.7964]
+      "coordinates": [8894516.369975, 758352.290411]
     },
     "properties": {
       "name": "University of Moratuwa"
@@ -70056,7 +70142,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [121.452, 31.198]
+      "coordinates": [13519974.795825, 3658489.997455]
     },
     "properties": {
       "name": "Fudan University"
@@ -70065,7 +70151,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-95.230691, 38.938859]
+      "coordinates": [-10601032.030012, 4712917.429095]
     },
     "properties": {
       "name": "Haskell Indian Nations University"
@@ -70074,7 +70160,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [15.963888, 45.8085]
+      "coordinates": [1777091.883241, 5749714.138414]
     },
     "properties": {
       "name": "University of Zagreb, Faculty of Geodesy"
@@ -70083,7 +70169,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-68.1547, -16.4949]
+      "coordinates": [-7586946.499168, -1862106.767192]
     },
     "properties": {
       "name": "GeoBolivia-Vice-presidency of the State"
@@ -70092,7 +70178,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-66.641474, 45.950252]
+      "coordinates": [-7418494.951393, 5772380.649183]
     },
     "properties": {
       "name": "Geodesy and Geomatics Engineering, University of New Brunswick"
@@ -70101,7 +70187,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [80.78995, 6.7102]
+      "coordinates": [8993496.095214, 748689.505938]
     },
     "properties": {
       "name": "Faculty of Geomatics, Sabaragamuwa University of Sri Lanka"
@@ -70110,7 +70196,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [79.973167, 6.914867]
+      "coordinates": [8902572.190496, 771634.911666]
     },
     "properties": {
       "name": "Dpt of IT, Faculty of Computing, Sri Lanka Institute of Information Technology"
@@ -70119,7 +70205,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [6.1487, 46.2253]
+      "coordinates": [684470.153041, 5816527.504505]
     },
     "properties": {
       "name": "University of Geneva - Institute for Environmental Sciences"
@@ -70128,7 +70214,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [8.8169, 47.22341]
+      "coordinates": [981492.818375, 5978616.817121]
     },
     "properties": {
       "name": "Geometa Lab at HSR - University of Applied Sciences Rapperswil"
@@ -70137,7 +70223,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [30.515647, 50.456936]
+      "coordinates": [3396986.285267, 6525788.408052]
     },
     "properties": {
       "name": "National University of \"Kyiv-Mohyla Academy\", Ecology Faculty"
@@ -70146,7 +70232,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [22.996707, 40.567811]
+      "coordinates": [2559981.713162, 4948801.377628]
     },
     "properties": {
       "name": "Centre for Research and Technology Hellas - Hellenic Institute of Transport"
@@ -70155,7 +70241,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [139.938952, 35.902681]
+      "coordinates": [15577932.878784, 4287238.677115]
     },
     "properties": {
       "name": "Centre for Spatial Information Science(CSIS), University of Tokyo"
@@ -70164,7 +70250,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-97.407096, 27.764053]
+      "coordinates": [-10843308.326372, 3219258.707482]
     },
     "properties": {
       "name": "FOSS4Geo Academy @ Del Mar College National Open Geospatial Technology Consortium"
@@ -70173,7 +70259,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [135.507556, 34.593067]
+      "coordinates": [15084632.132561, 4108717.166157]
     },
     "properties": {
       "name": "Osaka City University(OCU)"
@@ -70182,25 +70268,25 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [8.962795, 44.400133]
+      "coordinates": [997733.775484, 5527573.937725]
     },
     "properties": {
-      "name": "Università di Genova - Laboratorio di Geomatica"
+      "name": "Universit\xE0 di Genova - Laboratorio di Geomatica"
     }
   }, {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-15.456207, 28.069303]
+      "coordinates": [-1720577.092835, 3257714.125442]
     },
     "properties": {
-      "name": "Universidad de Las Palmas de Gran Canaria - Escuela de Ingenierías Industriales y Civiles - Grado en Ingenieria Geomática y Topografía"
+      "name": "Universidad de Las Palmas de Gran Canaria - Escuela de Ingenier\xEDas Industriales y Civiles - Grado en Ingenieria Geom\xE1tica y Topograf\xEDa"
     }
   }, {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-73.964831, 40.768703]
+      "coordinates": [-8233727.323531, 4978285.037913]
     },
     "properties": {
       "name": "Center for Advanced Research on Spatial Information, Hunter College - CUNY"
@@ -70209,7 +70295,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [22.961498, 40.627516]
+      "coordinates": [2556062.265211, 4957554.63695]
     },
     "properties": {
       "name": "Hellenic digital earth Centre of Excellence, Aristotle University of Thessaloniki - AUTH"
@@ -70218,7 +70304,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [13.039586, 47.823711]
+      "coordinates": [1451560.073675, 6077576.57635]
     },
     "properties": {
       "name": "Interfaculty Department of Geoinformatics - Z_GIS, University of Salzburg"
@@ -70227,7 +70313,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-114.132457, 51.079735]
+      "coordinates": [-12705166.996225, 6635410.058764]
     },
     "properties": {
       "name": "The GI Science Group @ the Department of Geomatics Engineering, University of Calgary"
@@ -70236,7 +70322,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [34.78346, 30.85332]
+      "coordinates": [3872077.055228, 3613714.568493]
     },
     "properties": {
       "name": "Ben Gurion University of the Negev (BGU)"
@@ -70245,7 +70331,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [20.476321, 44.805499]
+      "coordinates": [2279413.62704, 5590953.081523]
     },
     "properties": {
       "name": "University of Belgrade, Faculty of Civil Engineering, Department of geodesy and geoinformatics"
@@ -70254,7 +70340,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [125.400779, 43.99896]
+      "coordinates": [13959550.86336, 5465281.242338]
     },
     "properties": {
       "name": "Open Geospatial Laboratory of Northeast Institute of Geography and Agroecology, CAS"
@@ -70263,7 +70349,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-87.16305, 45.773875]
+      "coordinates": [-9702946.341989, 5744186.28275]
     },
     "properties": {
       "name": "Bay College"
@@ -70272,7 +70358,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [30.475278, 50.382597]
+      "coordinates": [3392492.451007, 6512800.469319]
     },
     "properties": {
       "name": "Taras Shevchenko National University of Kyiv (TSNUK) OSGeo Research and Education Lab, Faculty of Geography, Department of Physical Geography and Geoecology"
@@ -70281,7 +70367,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-105.001944, 39.012222]
+      "coordinates": [-11688762.982912, 4723422.449101]
     },
     "properties": {
       "name": "University of Colorado Denver, Department of Geography and Environmental Sciences"
@@ -70290,7 +70376,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [1.481608, 43.561984]
+      "coordinates": [164931.848115, 5397906.527905]
     },
     "properties": {
       "name": "French Space Agency CNES"
@@ -70299,7 +70385,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-56.203617, -34.905912]
+      "coordinates": [-6256558.02518, -4151102.30037]
     },
     "properties": {
       "name": "Comunidad gvSIG Uruguay"
@@ -70308,7 +70394,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [19.054403, 47.481916]
+      "coordinates": [2121126.43933, 6021092.864996]
     },
     "properties": {
       "name": "Department of Geodesy and Surveying, Budapest University of Technology and Economics"
@@ -70317,7 +70403,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-71.116913, 42.376398]
+      "coordinates": [-7916698.54195, 5217529.862449]
     },
     "properties": {
       "name": "Center for Geographic Analysis, Harvard University"
@@ -70326,7 +70412,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-73.240679, 43.515866]
+      "coordinates": [-8153115.091634, 5390824.466612]
     },
     "properties": {
       "name": "Community Mapping Lab Green Mountain College"
@@ -70335,7 +70421,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-82.55149, 35.59506]
+      "coordinates": [-9189589.831026, 4245044.358881]
     },
     "properties": {
       "name": "National Environmental Modeling and Analysis Center (NEMAC), UNC Asheville"
@@ -70344,7 +70430,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-106.60893, 35.068353]
+      "coordinates": [-11867651.801616, 4173173.927783]
     },
     "properties": {
       "name": "Birds Eye View GIS"
@@ -70353,7 +70439,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-79.38097, 43.6591]
+      "coordinates": [-8836649.159076, 5412837.793012]
     },
     "properties": {
       "name": "Geographic Information Science and Systems Research Group, Department of Geography and Environmental Studies, Ryerson University"
@@ -70362,7 +70448,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [153.014556, -27.49734]
+      "coordinates": [17033502.457879, -3185746.408505]
     },
     "properties": {
       "name": "School of Geography Planning and Environmental Management , University of Queensland"
@@ -70371,7 +70457,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [2.085741, 49.043274]
+      "coordinates": [232183.626047, 6282207.278776]
     },
     "properties": {
       "name": "ETIS Lab ENSEA UCP CNRS UMR 8051 , University of Cergy Pontoise"
@@ -70380,7 +70466,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-82.442079, 35.611559]
+      "coordinates": [-9177410.298747, 4247303.218631]
     },
     "properties": {
       "name": "Department of Global Studies, Warren Wilson College"
@@ -70389,7 +70475,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-80.529557, 43.474073]
+      "coordinates": [-8964509.279048, 5384411.242797]
     },
     "properties": {
       "name": "The Spatial Lab, Dept of Geography & Environmental Studies Wilfrid Laurier University"
@@ -70398,7 +70484,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [30.05, 31.2333]
+      "coordinates": [3345150.698338, 3663084.7983]
     },
     "properties": {
       "name": "National Authority for Remote Sensing & Space Sciences"
@@ -70407,19 +70493,16 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [82.863503, 54.986816]
+      "coordinates": [9224322.959307, 7359307.787796]
     },
     "properties": {
-      "marker-color": "#7e7e7e",
-      "marker-size": "medium",
-      "marker-symbol": "star",
       "name": "Geomatics and Virtual Reality Research Group, Siberian State University of Geosystems and Technologies"
     }
   }, {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [150.87889, -34.40596]
+      "coordinates": [16795761.206254, -4083443.667146]
     },
     "properties": {
       "name": "SMART Open Source Geospatial Laboratory, University of Wollongong"
@@ -70428,7 +70511,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [19.054717, 47.481911]
+      "coordinates": [2121161.39365, 6021092.041411]
     },
     "properties": {
       "name": "Department of Photogrammetry and Geoinformatics, Faculty of Civil Engineering, Budapest University of Technology and Economics"
@@ -70437,7 +70520,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-82.370095, 36.300059]
+      "coordinates": [-9169397.031994, 4341987.965182]
     },
     "properties": {
       "name": "Geospatial Exploration Lab, Department of Geosciences, East Tennessee State University"
@@ -70446,16 +70529,16 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [17.26551, 49.593812]
+      "coordinates": [1921987.781486, 6376226.149386]
     },
     "properties": {
-      "name": "Dept. of Geoinformatics, Palacký University Olomouc"
+      "name": "Dept. of Geoinformatics, Palack\xFD University Olomouc"
     }
   }, {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-0.133427, 51.524773]
+      "coordinates": [-14853.025698, 6714650.252287]
     },
     "properties": {
       "name": "University College London"
@@ -70464,7 +70547,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-74.438534, 41.451795]
+      "coordinates": [-8286459.700278, 5079211.462825]
     },
     "properties": {
       "name": "A World Bridge"
@@ -70473,7 +70556,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [9.23434, 45.48046]
+      "coordinates": [1027962.026612, 5697479.897772]
     },
     "properties": {
       "name": "IREA-CNR"
@@ -70482,7 +70565,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [6.6595, 46.77938]
+      "coordinates": [741332.148938, 5906137.328555]
     },
     "properties": {
       "name": "HEIG-VD GIS-Lab University of Applied Sciences Western Switzerland at Yverdon"
@@ -70491,7 +70574,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [139.403, 35.5664]
+      "coordinates": [15518270.975055, 4241121.537766]
     },
     "properties": {
       "name": "Global Studies and Collaboration(GSC), Aoyama Gakuin University"
@@ -70500,7 +70583,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [100.612086, 14.079753]
+      "coordinates": [11200086.181169, 1583367.992316]
     },
     "properties": {
       "name": "Remote Sensing & GIS, Asian Institute of\nTechnology"
@@ -70509,7 +70592,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [12.499691, 9.191132]
+      "coordinates": [1391459.226061, 1027568.706915]
     },
     "properties": {
       "name": "Geographic Information Science and Systems Research Group, School of Information Technology and Computing, American University of Nigeria"
@@ -70518,7 +70601,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [59.534125, 36.306903]
+      "coordinates": [6627308.479823, 4342933.340369]
     },
     "properties": {
       "name": "Department of Geography"
@@ -70527,7 +70610,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [11.332129, 43.312688]
+      "coordinates": [1261486.829884, 5359687.906214]
     },
     "properties": {
       "name": "Laboratorio Dati Economici Storici Territoriali University of Siena"
@@ -70536,7 +70619,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [23.70755, 37.96124]
+      "coordinates": [2639112.393956, 4573951.770879]
     },
     "properties": {
       "name": "Spatial Analysis Research Group Department of Geography, Harokopio University of Athens"
@@ -70545,7 +70628,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [76.780893, 30.766247]
+      "coordinates": [8547209.911413, 3602428.930436]
     },
     "properties": {
       "name": "Geoinformatics Lab, Department of Civil Engineering PEC University of Technology, Chandigarh, India"
@@ -70554,7 +70637,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-87.626971, 41.877591]
+      "coordinates": [-9754589.780345, 5142660.754423]
     },
     "properties": {
       "name": "DePaul University, Department of Geography"
@@ -70563,7 +70646,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-89.401185, 43.075844]
+      "coordinates": [-9952094.379383, 5323523.211426]
     },
     "properties": {
       "name": "University of Wisconsin, Cartography Lab"
@@ -70572,7 +70655,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [36.816531, -1.279007]
+      "coordinates": [4098397.483695, -142390.234225]
     },
     "properties": {
       "name": "Center for Agricultural Networking and Information Sharing (CANIS)"
@@ -70581,7 +70664,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-90.0009, 38.7917]
+      "coordinates": [-10018854.358936, 4691878.153514]
     },
     "properties": {
       "name": "Spatiotemporal Data Research and Education Laboratory Southern Illinois University Edwardsville, Computer Science Department"
@@ -70590,7 +70673,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [41.6333, -81.3666]
+      "coordinates": [4634597.756044, -16480092.927436]
     },
     "properties": {
       "name": "Lakeland Community College, Geography and Geospatial Technology"
@@ -70599,7 +70682,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [126.946214, 37.565073]
+      "coordinates": [14131587.900614, 4518166.047394]
     },
     "properties": {
       "name": "GIS Lab of Ewha Womans University Dept of Social Studies (Geography), Ewha Womans University"
@@ -70608,7 +70691,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [177.407999, -17.668684]
+      "coordinates": [19748968.122466, -1998804.701839]
     },
     "properties": {
       "name": "School of Science & Technology GeoForAll Lab of The University of Fiji"
@@ -70617,25 +70700,25 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-74.08731, 4.636]
+      "coordinates": [-8247361.623443, 516641.207987]
     },
     "properties": {
-      "name": "Laboratorio de Geomática de la Universidad Nacional de Colombia, Sede Bogotá"
+      "name": "Laboratorio de Geom\xE1tica de la Universidad Nacional de Colombia, Sede Bogot\xE1"
     }
   }, {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-70.656918, -33.467547]
+      "coordinates": [-7865492.132782, -3957528.719643]
     },
     "properties": {
-      "name": "Centro de Investigación en Recursos Naturales y Sustentabilidad (CIRENYS), Universidad Bernardo O Higgins"
+      "name": "Centro de Investigaci\xF3n en Recursos Naturales y Sustentabilidad (CIRENYS), Universidad Bernardo O Higgins"
     }
   }, {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-72.920816, 41.320066]
+      "coordinates": [-8117508.10535, 5059666.570653]
     },
     "properties": {
       "name": "Spatial-Ecology and GeoComputation at Yale"
@@ -70644,7 +70727,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [57.497599, -20.233947]
+      "coordinates": [6400603.442516, -2300765.851944]
     },
     "properties": {
       "name": "University of Mauritius"
@@ -70653,7 +70736,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-156.779008, 71.289655]
+      "coordinates": [-17452559.337635, 11502046.768731]
     },
     "properties": {
       "name": "A World Bridge"
@@ -70662,7 +70745,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-1.139759, 52.636878]
+      "coordinates": [-126877.391507, 6916110.612826]
     },
     "properties": {
       "name": "Pete Fisher Unit, University of Leicester"
@@ -70671,7 +70754,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-91.180909, 30.411775]
+      "coordinates": [-10150212.359948, 3556590.254438]
     },
     "properties": {
       "name": "Landscape Architecture, Louisiana State University"
@@ -70680,7 +70763,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [17.666866, 49.222782]
+      "coordinates": [1966666.527033, 6312747.729034]
     },
     "properties": {
       "name": "Tomas Bata University"
@@ -70689,7 +70772,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [57.688529, 11.966565]
+      "coordinates": [6421857.672893, 1341903.526027]
     },
     "properties": {
       "name": "Department of Earth Sciences, University of Gothenburg"
@@ -70698,7 +70781,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [52.416686, -4.066497]
+      "coordinates": [5834998.794591, -453060.900564]
     },
     "properties": {
       "name": "Department of Geography and Earth Science, Aberystwyth University"
@@ -70707,7 +70790,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [19.117262, 47.469102]
+      "coordinates": [2128123.848938, 6018982.406269]
     },
     "properties": {
       "name": "Indikatrix.org"
@@ -70716,7 +70799,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [41.258026, -96.011635]
+      "coordinates": [-10687966.340694, 5050475.333525]
     },
     "properties": {
       "name": "Laboratory for Cartography and GIS, University of Nebraska"
@@ -70725,7 +70808,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [50.484908, 3.337001]
+      "coordinates": [5619954.229041, 371683.464473]
     },
     "properties": {
       "name": "LabSIG UNGS"
@@ -70734,7 +70817,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [53.385066, -6.601791]
+      "coordinates": [5942798.363085, -736539.578444]
     },
     "properties": {
       "name": "Maynooth University"
@@ -70743,16 +70826,16 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-34.603684, -58.381559]
+      "coordinates": [-3852064.526979, -8047901.960815]
     },
     "properties": {
-      "name": "Nodo IDE del Instituto de Geografía"
+      "name": "Nodo IDE del Instituto de Geograf\xEDa"
     }
   }, {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [26.809, 75.8613]
+      "coordinates": [2984364.228677, 13313505.256671]
     },
     "properties": {
       "name": "Suresh Gyan Vihar University"
@@ -70761,25 +70844,25 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-84.042538, 9.93731]
+      "coordinates": [-9355572.535134, 1111804.381603]
     },
     "properties": {
-      "name": "Universidad de Costa Rica – Escuela de Geografía"
+      "name": "Universidad de Costa Rica \u2013 Escuela de Geograf\xEDa"
     }
   }, {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-68.853329, -32.897047]
+      "coordinates": [-7664717.523702, -3881646.634049]
     },
     "properties": {
-      "name": "Universidad Tecnológica Nacional"
+      "name": "Universidad Tecnol\xF3gica Nacional"
     }
   }, {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [178.447779, -18.148794]
+      "coordinates": [19864715.891471, -2054971.992046]
     },
     "properties": {
       "name": "USP Geospatial Science Laboratories"
@@ -70788,7 +70871,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [22.285146, 60.456165]
+      "coordinates": [2480771.104974, 8502005.847489]
     },
     "properties": {
       "name": "UTU Geospatial"
@@ -70797,7 +70880,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [144.961258, -37.799853]
+      "coordinates": [16137013.425312, -4551190.209896]
     },
     "properties": {
       "name": "Spatial@Melbourne"
@@ -70806,7 +70889,7 @@ var geojsonObject = {
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [19.117262, 47.469102]
+      "coordinates": [2128123.848938, 6018982.406269]
     },
     "properties": {
       "name": "Indikatrix.org"
@@ -70857,7 +70940,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63167" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59599" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
